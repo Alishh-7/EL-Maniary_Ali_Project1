@@ -1,0 +1,104 @@
+.hidden {
+      display: none;
+}
+
+#container {
+      width: 428px;
+      margin: 20px auto;
+      border: solid 1px black;
+      background-color: rgb(245, 199, 169);
+      padding:0px;
+      border-radius: 10px;
+      border-top: 20px solid rgb(110, 114, 113);
+      border-bottom: 20px solid rgb(0, 198, 83);
+}
+  
+#maincontent {
+      display: grid;
+      grid-template-columns: repeat(4,85px);
+      grid-column-gap: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+article {
+      grid-column: 1/-1;
+      
+}
+
+
+@keyframes fadeSquare {
+      0% {opacity:0}
+      50% {opacity:1}
+      100% {opacity: 0;}  
+  }
+  
+  .square {
+      width: 190px;
+      height: 45px;
+      background-color: rgb(120, 119, 119);
+  
+      animation-name: fadeSquare;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+  }
+
+  body {
+      color: black;
+}
+
+h2 {
+      font-size: 38px;
+      letter-spacing: 5px;
+      text-shadow: 1px 1px 0 rgb(80, 277,80);
+      
+      font-family: "Sedan SC", serif;
+      font-weight: 400;
+      font-style: normal;
+}
+
+p {
+      line-height: 28px;
+      font-family: "Sedan SC", serif;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 28px;
+}
+
+#maincontent article p::first-letter {
+      color: rgb(0, 0, 0);
+      background-color: rgb(87, 86, 86);
+      padding: 14px 6px;
+      margin-right: 8px;
+      float: left;
+      font-size: 32px;
+      border-radius: 5px;
+      box-shadow: 3px 3px 0 rgb(80, 277,80);
+}
+
+.moving {
+      margin-top: 10px;
+      width: 200px;
+      height: 150;
+      background-color: rgb(74, 74, 75);
+      border-radius: 6px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    }
+    @keyframes bounce {
+      0% {transform: translateX(0);}
+      50% {transform: translateX(200px);}
+      100% {transform: translateX(0);}
+    }
+
+    img { 
+      border: 0; 
+      margin: 0; 
+      padding:0px;
+      border-radius: 10px;
+      border-top: 20px solid rgb(110, 114, 113);
+      border-bottom: 20px solid rgb(0, 198, 83);
+      }
